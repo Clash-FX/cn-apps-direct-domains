@@ -1,0 +1,164 @@
+# Clash-FX cn-apps-direct-domains
+# https://github.com/Clash-FX/cn-apps-direct-domains
+#
+# Curated DOMAIN-SUFFIX bypass rules for common Chinese apps.
+# Domain-based companion to https://github.com/Clash-FX/cn-apps-direct
+# (which uses PROCESS-NAME and only works under Enhanced Mode/TUN).
+#
+# This list works under BOTH Rule mode and Enhanced Mode, because it
+# matches by domain instead of by process name.
+#
+# Format: mihomo / Clash classical rule-provider
+# Inclusion policy: domestic-only domains. Apps with cross-border
+# infrastructure (e.g. Lark's larksuite.com international tenant)
+# are scoped to their mainland-only domains only.
+
+# === IM / Messaging ===
+DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+DOMAIN-SUFFIX,wechat.com,DIRECT
+DOMAIN-SUFFIX,weixin.com,DIRECT
+DOMAIN-SUFFIX,wx.qq.com,DIRECT
+DOMAIN-SUFFIX,wxs.qq.com,DIRECT
+DOMAIN-SUFFIX,qpic.cn,DIRECT
+DOMAIN-SUFFIX,qq.com,DIRECT
+DOMAIN-SUFFIX,qzone.qq.com,DIRECT
+DOMAIN-SUFFIX,gtimg.com,DIRECT
+DOMAIN-SUFFIX,gtimg.cn,DIRECT
+DOMAIN-SUFFIX,dingtalk.com,DIRECT
+DOMAIN-SUFFIX,dingtalkapps.com,DIRECT
+DOMAIN-SUFFIX,alicdn.com,DIRECT
+DOMAIN-SUFFIX,feishu.cn,DIRECT
+DOMAIN-SUFFIX,feishucdn.com,DIRECT
+
+# === Video Conferencing ===
+DOMAIN-SUFFIX,meeting.tencent.com,DIRECT
+DOMAIN-SUFFIX,wemeet.qq.com,DIRECT
+
+# === Music ===
+DOMAIN-SUFFIX,music.163.com,DIRECT
+DOMAIN-SUFFIX,music.126.net,DIRECT
+DOMAIN-SUFFIX,163yun.com,DIRECT
+DOMAIN-SUFFIX,126.net,DIRECT
+DOMAIN-SUFFIX,127.net,DIRECT
+DOMAIN-SUFFIX,y.qq.com,DIRECT
+DOMAIN-SUFFIX,qqmusic.qq.com,DIRECT
+DOMAIN-SUFFIX,xiami.com,DIRECT
+DOMAIN-SUFFIX,xiami.net,DIRECT
+DOMAIN-SUFFIX,kugou.com,DIRECT
+DOMAIN-SUFFIX,kuwo.cn,DIRECT
+
+# === Video / Streaming ===
+DOMAIN-SUFFIX,bilibili.com,DIRECT
+DOMAIN-SUFFIX,b23.tv,DIRECT
+DOMAIN-SUFFIX,bilivideo.com,DIRECT
+DOMAIN-SUFFIX,bilivideo.cn,DIRECT
+DOMAIN-SUFFIX,biliapi.com,DIRECT
+DOMAIN-SUFFIX,biliapi.net,DIRECT
+DOMAIN-SUFFIX,hdslb.com,DIRECT
+DOMAIN-SUFFIX,acgvideo.com,DIRECT
+DOMAIN-SUFFIX,iqiyi.com,DIRECT
+DOMAIN-SUFFIX,iqiyipic.com,DIRECT
+DOMAIN-SUFFIX,71.am,DIRECT
+DOMAIN-SUFFIX,youku.com,DIRECT
+DOMAIN-SUFFIX,ykimg.com,DIRECT
+DOMAIN-SUFFIX,mgtv.com,DIRECT
+DOMAIN-SUFFIX,hitv.com,DIRECT
+DOMAIN-SUFFIX,v.qq.com,DIRECT
+
+# === Cloud Storage / Drive ===
+DOMAIN-SUFFIX,pan.baidu.com,DIRECT
+DOMAIN-SUFFIX,baidupcs.com,DIRECT
+DOMAIN-SUFFIX,bdimg.com,DIRECT
+DOMAIN-SUFFIX,bdstatic.com,DIRECT
+DOMAIN-SUFFIX,aliyundrive.com,DIRECT
+DOMAIN-SUFFIX,alipan.com,DIRECT
+DOMAIN-SUFFIX,alicloud.com,DIRECT
+DOMAIN-SUFFIX,aliyuncs.com,DIRECT
+DOMAIN-SUFFIX,quark.cn,DIRECT
+DOMAIN-SUFFIX,xunlei.com,DIRECT
+DOMAIN-SUFFIX,sandai.net,DIRECT
+
+# === Office ===
+DOMAIN-SUFFIX,wps.cn,DIRECT
+DOMAIN-SUFFIX,wps.com,DIRECT
+DOMAIN-SUFFIX,wpscdn.cn,DIRECT
+DOMAIN-SUFFIX,wpscdn.com,DIRECT
+DOMAIN-SUFFIX,kdocs.cn,DIRECT
+DOMAIN-SUFFIX,docs.qq.com,DIRECT
+
+# === Lifestyle / Food ===
+DOMAIN-SUFFIX,meituan.com,DIRECT
+DOMAIN-SUFFIX,meituan.net,DIRECT
+DOMAIN-SUFFIX,dianping.com,DIRECT
+DOMAIN-SUFFIX,ele.me,DIRECT
+
+# === E-commerce ===
+DOMAIN-SUFFIX,taobao.com,DIRECT
+DOMAIN-SUFFIX,tmall.com,DIRECT
+DOMAIN-SUFFIX,alipay.com,DIRECT
+DOMAIN-SUFFIX,alipayobjects.com,DIRECT
+DOMAIN-SUFFIX,jd.com,DIRECT
+DOMAIN-SUFFIX,360buyimg.com,DIRECT
+DOMAIN-SUFFIX,jdcdn.com,DIRECT
+DOMAIN-SUFFIX,pinduoduo.com,DIRECT
+DOMAIN-SUFFIX,yangkeduo.com,DIRECT
+DOMAIN-SUFFIX,xiaohongshu.com,DIRECT
+DOMAIN-SUFFIX,xhscdn.com,DIRECT
+
+# === Maps / Navigation ===
+DOMAIN-SUFFIX,amap.com,DIRECT
+DOMAIN-SUFFIX,autonavi.com,DIRECT
+DOMAIN-SUFFIX,map.baidu.com,DIRECT
+
+# === News / Reading ===
+DOMAIN-SUFFIX,zhihu.com,DIRECT
+DOMAIN-SUFFIX,zhimg.com,DIRECT
+DOMAIN-SUFFIX,toutiao.com,DIRECT
+DOMAIN-SUFFIX,toutiaoimg.com,DIRECT
+DOMAIN-SUFFIX,bytedance.com,DIRECT
+DOMAIN-SUFFIX,bytecdn.cn,DIRECT
+DOMAIN-SUFFIX,douyin.com,DIRECT
+DOMAIN-SUFFIX,douyincdn.com,DIRECT
+DOMAIN-SUFFIX,iesdouyin.com,DIRECT
+DOMAIN-SUFFIX,kuaishou.com,DIRECT
+DOMAIN-SUFFIX,ksapisrv.com,DIRECT
+
+# === Remote Desktop (popular in CN) ===
+DOMAIN-SUFFIX,todesk.com,DIRECT
+DOMAIN-SUFFIX,oray.com,DIRECT
+DOMAIN-SUFFIX,sunlogin.com,DIRECT
+
+# === Chinese Search / Portal ===
+DOMAIN-SUFFIX,baidu.com,DIRECT
+DOMAIN-SUFFIX,sogou.com,DIRECT
+DOMAIN-SUFFIX,so.com,DIRECT
+DOMAIN-SUFFIX,360.cn,DIRECT
+DOMAIN-SUFFIX,360safe.com,DIRECT
+
+# === Chinese Email ===
+DOMAIN-SUFFIX,163.com,DIRECT
+DOMAIN-SUFFIX,mail.qq.com,DIRECT
+DOMAIN-SUFFIX,sina.com.cn,DIRECT
+DOMAIN-SUFFIX,sinaimg.cn,DIRECT
+DOMAIN-SUFFIX,sinajs.cn,DIRECT
+DOMAIN-SUFFIX,sina.com,DIRECT
+DOMAIN-SUFFIX,weibo.com,DIRECT
+DOMAIN-SUFFIX,weibocdn.com,DIRECT
+
+# === Chinese Banks / Finance ===
+DOMAIN-SUFFIX,cmbchina.com,DIRECT
+DOMAIN-SUFFIX,icbc.com.cn,DIRECT
+DOMAIN-SUFFIX,abchina.com,DIRECT
+DOMAIN-SUFFIX,bankcomm.com,DIRECT
+DOMAIN-SUFFIX,boc.cn,DIRECT
+DOMAIN-SUFFIX,ccb.com,DIRECT
+DOMAIN-SUFFIX,unionpay.com,DIRECT
+DOMAIN-SUFFIX,95516.com,DIRECT
+
+# === Mobile Carriers ===
+DOMAIN-SUFFIX,10086.cn,DIRECT
+DOMAIN-SUFFIX,10010.com,DIRECT
+DOMAIN-SUFFIX,189.cn,DIRECT
+DOMAIN-SUFFIX,chinamobile.com,DIRECT
+DOMAIN-SUFFIX,chinaunicom.com,DIRECT
+DOMAIN-SUFFIX,chinatelecom.com.cn,DIRECT
