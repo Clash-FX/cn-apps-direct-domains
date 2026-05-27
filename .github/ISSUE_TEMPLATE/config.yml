@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ClashFX app issues
+    url: https://github.com/Clash-FX/ClashFX/issues
+    about: Bug reports or feature requests for the ClashFX app itself belong in the main repo.
+  - name: PROCESS-NAME (Enhanced Mode) rules
+    url: https://github.com/Clash-FX/cn-apps-direct/issues
+    about: For per-process bypass rules (used under Enhanced Mode), go to cn-apps-direct.
