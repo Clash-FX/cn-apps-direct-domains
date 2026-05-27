@@ -1,0 +1,37 @@
+name: Rule issue / false positive
+description: An existing rule is over-matching, under-matching, or pointing to the wrong target.
+title: "Rule issue: <rule line>"
+labels:
+  - bug
+body:
+  - type: input
+    id: rule
+    attributes:
+      label: Affected rule
+      description: The exact line from `apps-direct-domains.list`
+      placeholder: e.g. DOMAIN-SUFFIX,qq.com,DIRECT
+    validations:
+      required: true
+  - type: textarea
+    id: symptom
+    attributes:
+      label: What goes wrong
+      description: What broke because of this rule? Be specific — domain, expected behaviour, observed behaviour.
+      placeholder: |
+        cloud.qq.com is going DIRECT but the overseas instance is unreachable
+        from my network, so I need it via proxy. The current `qq.com` suffix
+        is too broad.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested fix
+      placeholder: |
+        Drop the broad `qq.com` rule; keep only `weixin.qq.com`, `wx.qq.com`,
+        `mail.qq.com`, `qpic.cn`.
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: e.g. 14.5

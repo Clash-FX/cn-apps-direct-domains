@@ -1,0 +1,52 @@
+name: Add app / service domains
+description: Request that an app or service be added to the bypass list.
+title: "Add: <App name>"
+labels:
+  - enhancement
+body:
+  - type: input
+    id: app
+    attributes:
+      label: App / service name
+      placeholder: e.g. NetEase Cloud Music
+    validations:
+      required: true
+  - type: textarea
+    id: domains
+    attributes:
+      label: Domains the app touches
+      description: |
+        Open ClashFX → Connections viewer, use the app, list every distinct domain
+        it queried. Domestic-only domains only — no overseas tenants.
+      placeholder: |
+        music.163.com
+        music.126.net
+        163yun.com
+      render: plain
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Why these are mainland-only
+      description: How did you confirm these domains don't legitimately serve overseas users?
+      placeholder: |
+        Domain WHOIS shows ICP filing, app has no overseas presence,
+        same domain isn't used by an international product, etc.
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: Tested on macOS version
+      placeholder: e.g. 14.5
+  - type: input
+    id: app-version
+    attributes:
+      label: Tested on app version
+      placeholder: e.g. NetEase Cloud Music 3.5.0
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: Anything reviewers should know — known broad-suffix risk, related apps that share infra, etc.
